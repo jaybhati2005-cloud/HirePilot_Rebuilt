@@ -1,0 +1,1 @@
+"""HirePilot LiveKit voice agent."""

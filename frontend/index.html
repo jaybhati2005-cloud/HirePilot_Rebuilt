@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1730">
+<title>HirePilot AI — Career, without the guesswork</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+<link rel="stylesheet" href="/static/styles.css?v=10">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topnav">
+    <div class="topnav-inner">
+      <a class="brand" href="#" aria-label="HirePilot AI home"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="hpBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#17346B"/><stop offset="1" stop-color="#0A1730"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#hpBg)"/><path d="M20 15V49" fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="round"/><path d="M44 31V49" fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="round"/><path d="M20 41 44 31" fill="none" stroke="#5FA0FF" stroke-width="6.5" stroke-linecap="round"/><circle cx="44" cy="16.5" r="5" fill="#F2B84B"/></svg><span class="brand-name">HirePilot<b>AI</b></span></a>
+      <nav class="nav-list" id="sidebar" aria-label="Main navigation">
+      <button class="nav-item active" data-view="overview"><span class="nav-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span> Overview</button>
+      <button class="nav-item" data-view="interview"><span class="nav-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span> Interview coach <span class="nav-dot"></span></button>
+      <button class="nav-item" data-view="humanizer"><span class="nav-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span> Resume humanizer</button>
+      <button class="nav-item" data-view="jobmatch"><span class="nav-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M8 11l2 2 4-4"/></svg></span> Resume match</button>
+      <button class="nav-item" data-view="roles"><span class="nav-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19c4 0 4-6 8-6s4-8 8-8"/><path d="M16 5h4v4"/></svg></span> Career paths</button>
+    </nav>
+      <div class="topnav-right"><span class="status-indicator" id="apiStatus"><i></i> Checking AI connection</span><div class="top-avatar">CP</div><button class="mobile-menu" id="mobileMenu" aria-label="Open navigation">☰</button></div>
+    </div>
+  </header>
+
+  <main class="main-area">
+    <div class="content-wrap">
+      <div class="breadcrumb">Workspace <span>/</span> <strong id="crumb">Overview</strong></div>
+
+      <section class="view active" id="view-overview">
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-line"></span> Your next chapter starts here</div>
+            <h1>Make your next<br><em>move count.</em></h1>
+            <p>A calmer, smarter way to prepare for interviews, sharpen your resume, and move toward the role you want.</p>
+            <div class="hero-actions"><button class="btn btn-primary" data-view="interview">Practice an interview <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button><button class="btn btn-ghost" data-view="humanizer">Polish my resume</button></div>
+            <div class="hero-proof"><span class="proof-avatars"><b>J</b><b>A</b><b>R</b></span><span>Built for students and early-career talent</span></div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="report-preview">
+              <div class="rp-head"><small>Practice report</small><span class="rp-tag">Sample</span></div>
+              <div class="rp-score"><div class="rp-ring" style="--p:86"><span>86</span></div><div><b>Strong progress</b><p>Clear structure and relevant examples. Add one measurable result.</p></div></div>
+              <div class="rp-rows">
+                <div class="rp-row"><span>Relevance</span><i style="--w:92%"></i><em>92</em></div>
+                <div class="rp-row"><span>Structure</span><i style="--w:84%"></i><em>84</em></div>
+                <div class="rp-row"><span>Evidence</span><i style="--w:68%"></i><em>68</em></div>
+                <div class="rp-row"><span>Clarity</span><i style="--w:88%"></i><em>88</em></div>
+              </div>
+            </div>
+            <div class="floating-card card-insight"><span class="insight-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></span><div><b>Clarity is a skill.</b><small>Practice makes it sharper.</small></div></div>
+          </div>
+        </div>
+
+        <div class="section-heading"><div><div class="eyebrow">YOUR TOOLKIT</div><h2>What would you like to work on?</h2></div><span class="muted-note">Choose a starting point</span></div>
+        <div class="tool-grid">
+          <button class="tool-card tool-interview" data-view="interview"><span class="tool-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span><span class="tool-arrow"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span><small>01 · PREPARE</small><strong>Interview coach</strong><p>Practise by text or in a live voice-and-camera interview with feedback.</p><span class="tool-link">Start a practice session →</span></button>
+          <button class="tool-card tool-resume" data-view="humanizer"><span class="tool-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span><span class="tool-arrow"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span><small>02 · REFINE</small><strong>Resume humanizer</strong><p>Make your resume clearer and more natural without inventing achievements.</p><span class="tool-link">Improve my resume →</span></button>
+          <button class="tool-card tool-match" data-view="jobmatch"><span class="tool-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M8 11l2 2 4-4"/></svg></span><span class="tool-arrow"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span><small>03 · ALIGN</small><strong>Resume match</strong><p>See where your experience fits a job description—and what is missing.</p><span class="tool-link">Check my fit →</span></button>
+          <button class="tool-card tool-career" data-view="roles"><span class="tool-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19c4 0 4-6 8-6s4-8 8-8"/><path d="M16 5h4v4"/></svg></span><span class="tool-arrow"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span><small>04 · EXPLORE</small><strong>Career paths</strong><p>Discover realistic entry-level roles based on the skills you already show.</p><span class="tool-link">Explore roles →</span></button>
+        </div>
+        <div class="bottom-note"><span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span><p><strong>A note on honest feedback</strong> — HirePilot evaluates the information you provide. It will not make up experience, guarantee a job, or pretend an AI score is a hiring decision.</p></div>
+      </section>
+
+      <section class="view" id="view-interview">
+        <div class="page-intro"><div><div class="eyebrow">PRACTICE WITH PURPOSE</div><h1>Interview <em>coach.</em></h1><p>One focused session: set your target, answer realistic questions, and see where to improve.</p></div><div class="intro-badge"><span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span> TEXT + LIVE PRACTICE</div></div>
+        <div class="interview-layout">
+          <div class="interview-main">
+            <div class="panel setup-panel" id="setupPanel">
+              <div class="panel-heading"><div class="step-number">01</div><div><h2>Set up your practice</h2><p>Give the AI enough context to ask relevant questions.</p></div></div>
+              <div class="form-grid">
+                <label class="field field-wide">Target role<input id="interviewRole" value="Data Analyst" placeholder="e.g. Python Developer"></label>
+                <label class="field">Interview type<select id="interviewType"><option>Technical + HR</option><option>Technical</option><option>HR</option><option>Project discussion</option><option>Internship screening</option></select></label>
+                <label class="field">Difficulty<select id="interviewDifficulty"><option>Beginner</option><option selected>Medium</option><option>Advanced</option></select></label>
+                <label class="field">Number of questions<select id="questionCount"><option value="4">4 questions · Quick</option><option value="6">6 questions · Focused</option><option value="8" selected>8 questions · Full practice</option><option value="10">10 questions · Deep practice</option><option value="12">12 questions · Challenge</option></select></label>
+                <label class="field field-wide">Job description <span class="optional">OPTIONAL</span><textarea id="interviewJD" rows="3" placeholder="Paste the job description to tailor the questions..."></textarea></label>
+                <label class="field field-wide">Resume PDF <span class="optional">OPTIONAL · PERSONALISE QUESTIONS</span><input id="interviewResume" type="file" accept=".pdf,application/pdf"><span class="field-hint">Your resume is used only to tailor this session. Text-based PDF, max 10 MB.</span></label>
+              </div>
+              <div class="panel-footer"><span class="privacy-note">No raw recordings are stored by HirePilot. Voice is streamed to the configured AI provider.</span><div class="setup-actions"><button class="btn btn-outline" id="startLiveInterview">Start live interview</button><button class="btn btn-primary" id="generateQuestions">Text practice <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+            </div>
+
+            <div class="panel practice-panel hidden" id="practicePanel">
+              <div class="practice-top"><div><div class="eyebrow">YOUR PRACTICE SESSION</div><h2 id="practiceRoleTitle">Data Analyst</h2><p id="practiceMeta">Technical + HR · Medium</p></div><button class="btn btn-quiet btn-small" id="resetSession">← Setup again</button></div>
+              <div class="progress-row"><div class="progress-track"><span id="progressFill"></span></div><span id="progressText">Question 1 of 8</span></div>
+              <div class="question-card">
+                <div class="question-meta"><span id="questionCategory">TECHNICAL</span><span id="questionIndex">QUESTION 01</span></div>
+                <h3 id="currentQuestion">Your question will appear here.</h3>
+                <p id="questionPurpose" class="question-purpose"></p>
+              </div>
+              <label class="field answer-field">Your answer<textarea id="candidateAnswer" rows="8" placeholder="Structure your answer clearly. Include an example or explain your reasoning where relevant..."></textarea></label>
+              <div class="answer-hint"><span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></span> Be specific. A clear, honest answer beats a long answer full of buzzwords.</div>
+              <div class="practice-actions"><button class="btn btn-quiet" id="previousQuestion" disabled>← Previous</button><div><button class="btn btn-outline" id="evaluateAnswer">Evaluate answer</button><button class="btn btn-primary" id="nextQuestion" disabled>Next question →</button></div></div>
+              <div id="answerFeedback" class="feedback-panel hidden" aria-live="polite"></div>
+            </div>
+
+
+
+            <div class="panel live-panel hidden" id="livePanel">
+              <div class="live-header">
+                <div><div class="eyebrow">HIREPILOT LIVE ROOM</div><h2>Live <em>interview.</em></h2><p id="liveStatus">Preparing your interview room…</p></div>
+                <span class="live-pill"><i></i> LIVE SESSION</span>
+              </div>
+              <div class="live-grid">
+                <div class="live-main">
+              <div class="live-stage">
+                <div class="camera-stage">
+                  <video id="liveCamera" autoplay muted playsinline></video>
+                  <canvas id="liveCanvas" class="hidden"></canvas>
+                  <div class="camera-overlay"><span class="camera-live-dot"></span> <span id="cameraStatusText">CAMERA STARTING</span></div>
+                  <div class="camera-placeholder hidden" id="cameraPlaceholder">Camera preview unavailable</div>
+                </div>
+                <div class="ai-stage">
+                  <div class="ai-orb"><span><svg class="i" style="width:34px;height:34px" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12v0M8 8v8M12 4v16M16 8v8M20 12v0"/></svg></span><i></i></div>
+                  <span class="ai-label">HIREPILOT AI</span>
+                  <strong id="liveAiState">Your interviewer is ready</strong>
+                  <p id="liveAiHint">Listen to the question, then answer naturally.</p>
+                  <button class="btn btn-quiet btn-small" id="repeatLiveQuestion">Repeat question</button>
+                  <button class="btn btn-quiet btn-small" id="clarifyLiveQuestion">Ask for clarification</button>
+                </div>
+              </div>
+              <div class="live-question-card">
+                <div class="question-meta"><span id="liveQuestionCategory">INTERVIEW QUESTION</span><span id="liveQuestionCount">QUESTION 01</span></div>
+                <h3 id="liveQuestionText">Your question will appear here.</h3>
+                <p id="liveQuestionPurpose" class="question-purpose"></p>
+              </div>
+              <audio id="liveRemoteAudio" autoplay class="hidden"></audio>
+              <div class="live-transcript-wrap">
+                <div class="transcript-head"><strong>Live transcript</strong><span id="micStatus">Microphone not started</span></div>
+                <textarea id="liveTranscript" class="live-transcript" rows="5" placeholder="Your speech is transcribed by the real-time provider. You can correct the transcript before analysis."></textarea>
+                <div class="transcript-actions">
+                  <div class="live-left-actions"><button class="btn btn-quiet btn-small" id="clearLiveTranscript">Clear transcript</button><label class="hf-toggle"><input type="checkbox" id="liveHandsFree" checked> Hands-free: submit when I stop speaking</label></div>
+                  <button class="btn btn-outline" id="finishLiveAnswer">Finish answer & analyse →</button>
+                </div>
+              </div>
+              <div class="live-footer">
+                <span class="privacy-note">Voice audio is streamed to the AI provider; camera frames stay on-device. HirePilot stores no raw media.</span>
+                <div><button class="btn btn-quiet" id="stopLiveInterview">End interview</button><button class="btn btn-primary" id="nextLiveQuestion" disabled>Next question →</button></div>
+              </div>
+                </div>
+                <aside class="live-side">
+                  <div class="live-side-head"><strong>Answer report</strong><span>Appears here after each answer</span></div>
+              <div id="liveFeedback" class="feedback-panel hidden" aria-live="polite"></div>
+                  <div class="live-empty">Answer the question out loud. Your score, coaching and delivery review will show up here, so you never need to scroll.</div>
+              <div class="live-metrics-panel">
+                <div class="metrics-heading"><strong>Live delivery signals</strong><span>Local analysis · not an emotion detector</span></div>
+                <div class="live-metric-grid">
+                  <div class="live-metric"><small>Speaking pace</small><strong id="livePace">— WPM</strong></div>
+                  <div class="live-metric"><small>Filler words</small><strong id="liveFillers">0</strong></div>
+                  <div class="live-metric"><small>Longest pause</small><strong id="livePause">—</strong></div>
+                  <div class="live-metric"><small>Pitch variation</small><strong id="livePitch">—</strong></div>
+                  <div class="live-metric"><small>Camera framing</small><strong id="liveFraming">Checking…</strong></div>
+                  <div class="live-metric"><small>Posture</small><strong id="livePosture">Checking…</strong></div>
+                  <div class="live-metric"><small>Gaze</small><strong id="liveGaze">Checking…</strong></div>
+                  <div class="live-metric"><small>Head movement</small><strong id="liveSteady">Checking…</strong></div>
+                  <div class="live-metric"><small>Lighting</small><strong id="liveLighting">Checking…</strong></div>
+                  <div class="live-metric"><small>Hand gestures</small><strong id="liveHands">Checking…</strong></div>
+                </div>
+                <p class="visual-status" id="liveVisualStatus" data-stage="loading">Visual analysis will start when the camera is ready.</p>
+                <p class="metrics-footnote" id="liveMetricsNote">Audio delivery metrics and visual inference run locally; microphone audio is streamed to the configured voice provider for conversation and transcription. Values are coaching indicators, not personality or emotion judgments.</p>
+              </div>
+                </aside>
+              </div>
+            </div>
+            <div class="panel report-panel hidden" id="reportPanel">
+              <div class="report-header"><div><div class="eyebrow">SESSION COMPLETE</div><h2>Your practice <em>report.</em></h2><p>A summary of the answers you submitted.</p></div><div class="report-score"><strong id="reportScore">—</strong><span>AVERAGE SCORE</span></div></div>
+              <div class="report-stats" id="reportStats"></div><div id="liveVisualReport"></div>
+              <div class="report-columns"><div><h3>What you did well</h3><ul id="reportStrengths"></ul></div><div><h3>What to work on</h3><ul id="reportImprovements"></ul></div></div>
+              <div class="next-steps"><h3>Your next practice steps</h3><ol id="reportNextSteps"></ol></div>
+              <div class="panel-footer"><button class="btn btn-outline" id="reviewSession">Review answers</button><button class="btn btn-primary" id="newSession">Start a new session →</button></div>
+            </div>
+          </div>
+          <aside class="interview-aside">
+            <div class="aside-card aside-dark"><div class="aside-orb"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></div><small>The HirePilot method</small><h3>Think clearly.<br>Answer honestly.</h3><p>Strong interviews are built on clear reasoning, relevant examples, and structured answers—not memorised scripts.</p><div class="aside-rule"></div><div class="method-row"><span>01</span> Understand the question</div><div class="method-row"><span>02</span> Explain your reasoning</div><div class="method-row"><span>03</span> Support it with evidence</div></div>
+            <div class="aside-card"><div class="aside-card-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></div><h3>How scoring works</h3><p>Each answer is reviewed for relevance, correctness, completeness, structure, and clarity. Scores are coaching signals—not a hiring prediction.</p></div>
+            <div class="aside-card quote-card"><span>“</span><p>Don't try to sound perfect. Try to make your thinking easy to follow.</p></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="view" id="view-humanizer">
+        <div class="page-intro"><div><div class="eyebrow">CLEARER WORDS. SAME REAL EXPERIENCE.</div><h1>Resume <em>humanizer.</em></h1><p>Make your resume sound natural, confident, and professional—without turning it into fiction.</p></div><div class="intro-badge"><span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span> TRUTH-FIRST EDITING</div></div>
+        <div class="split-layout">
+          <div class="panel">
+            <div class="panel-heading"><div class="step-number">01</div><div><h2>Bring your resume</h2><p>Upload a text-based PDF and tell us what role you're targeting.</p></div></div>
+            <label class="field">Target role <span class="optional">OPTIONAL</span><input id="humanizerRole" placeholder="e.g. Data Analyst Intern"></label>
+            <label class="field upload-zone" for="humanizerFile"><span class="upload-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V5M7 9l5-5 5 5M5 20h14"/></svg></span><strong id="humanizerFileName">Drop your resume PDF here</strong><span>or browse files · up to 10 MB</span><input id="humanizerFile" type="file" accept=".pdf,application/pdf"></label>
+            <div class="humanizer-promise"><span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span><p><strong>No made-up achievements.</strong> The humanizer improves wording but will flag missing evidence instead of inventing numbers, projects, or skills.</p></div>
+            <button class="btn btn-primary btn-full" id="humanizeButton">Humanize my resume <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+          <div class="panel preview-panel" id="humanizerOutput"><div class="empty-preview"><div class="empty-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></div><h3>Your improved resume starts here.</h3><p>Upload a PDF to get a natural professional summary, cleaner bullet points, and suggestions on what real evidence to add.</p><div class="preview-lines"><i></i><i></i><i></i><i></i></div></div></div>
+        </div>
+      </section>
+
+      <section class="view" id="view-jobmatch">
+        <div class="page-intro"><div><div class="eyebrow">UNDERSTAND THE FIT</div><h1>Resume <em>match.</em></h1><p>Compare your current experience with a real job description. See strengths and gaps clearly.</p></div></div>
+        <div class="split-layout">
+          <div class="panel">
+            <div class="panel-heading"><div class="step-number">01</div><div><h2>Compare your resume</h2><p>Upload your resume and paste the role requirements.</p></div></div>
+            <label class="field">Resume PDF<input id="matchResume" type="file" accept=".pdf,application/pdf"></label>
+            <label class="field">Job description<textarea id="matchJD" rows="10" placeholder="Paste the full job description here..."></textarea></label>
+            <button class="btn btn-primary btn-full" id="matchButton">Analyze my match <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+          <div class="panel result-panel" id="matchOutput"><div class="empty-preview"><div class="empty-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M8 11l2 2 4-4"/></svg></div><h3>Your match breakdown will appear here.</h3><p>We'll separate strong matches, partial matches, and missing skills—based on evidence in your resume.</p></div></div>
+        </div>
+      </section>
+
+      <section class="view" id="view-roles">
+        <div class="page-intro"><div><div class="eyebrow">FIND A REALISTIC NEXT STEP</div><h1>Career <em>paths.</em></h1><p>Explore entry-level roles that connect with the skills and experience already in your resume.</p></div></div>
+        <div class="panel role-panel">
+          <div class="panel-heading"><div class="step-number">01</div><div><h2>Find roles that fit</h2><p>Upload a resume to get five grounded role suggestions and skills to build next.</p></div></div>
+          <div class="role-upload-row"><label class="field">Resume PDF<input id="rolesResume" type="file" accept=".pdf,application/pdf"></label><button class="btn btn-primary" id="rolesButton">Find career paths <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+        </div>
+        <div id="rolesOutput" class="roles-results"></div>
+      </section>
+
+      <footer class="app-footer"><span>HirePilot AI</span><span>Built for clarity, not shortcuts.</span><a href="/docs" target="_blank" rel="noreferrer">API status & docs ↗</a></footer>
+    </div>
+  </main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/static/app.js?v=10" defer></script>
+</body>
+</html>
